@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
+/* Design System Colors from Design.json */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary */
+  --cream: #F5F3E8;
+
+  /* Secondary */
+  --rich-green: #2D5016;
+
+  /* Accent */
+  --black: #000000;
+  --white: #FFFFFF;
+
+  /* Product Colors */
+  --mood-boost-1: #C4D962;
+  --mood-boost-2: #8DB843;
+  --good-cookin-1: #4A7B3C;
+  --good-cookin-2: #6B9B5F;
+  --clean-air-1: #8B6F47;
+  --clean-air-2: #A68A6D;
+  --just-for-fun-1: #E8B84D;
+  --just-for-fun-2: #6BAEB8;
+  --just-for-fun-3: #E17B7B;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--cream);
+  --color-rich-green: var(--rich-green);
+
+  /* Font families */
+  --font-heading: var(--font-dm-sans);
+  --font-body: var(--font-source-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+/* Typography utility classes */
+.font-heading {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--rich-green);
+  color: var(--white);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rich-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1F3810;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--rich-green);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
