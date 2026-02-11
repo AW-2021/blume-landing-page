@@ -1,0 +1,356 @@
+{
+  "designSystem": {
+    "projectName": "Blume - Garden Seed Brand",
+    "brandIdentity": {
+      "name": "blume*",
+      "tagline": "gardens for everyone",
+      "philosophy": "no yard doesn't have to mean no garden! let your flowers blume*",
+      "voice": "Friendly, accessible, encouraging, nature-focused",
+      "positioning": "Making gardening accessible for everyone, especially those without traditional outdoor spaces"
+    },
+    "colorPalette": {
+      "primary": {
+        "cream": "#F5F3E8",
+        "description": "Main background color, warm neutral"
+      },
+      "secondary": {
+        "richGreen": "#2D5016",
+        "description": "Deep forest green for grass texture backgrounds and primary CTAs"
+      },
+      "accent": {
+        "black": "#000000",
+        "white": "#FFFFFF"
+      },
+      "productColors": {
+        "moodBoost": ["#C4D962", "#8DB843"],
+        "goodCookin": ["#4A7B3C", "#6B9B5F"],
+        "cleanAir": ["#8B6F47", "#A68A6D"],
+        "justForFun": ["#E8B84D", "#6BAEB8", "#E17B7B"]
+      }
+    },
+    "typography": {
+      "headings": {
+        "fontFamily": "Roc Grotesk Medium",
+        "characteristics": "Bold, rounded, geometric sans-serif",
+        "usage": "Brand name, product names, major headings, CTAs",
+        "examples": {
+          "hero": {
+            "text": "blume*",
+            "size": "96-120px",
+            "weight": "700-800",
+            "color": "#FFFFFF",
+            "letterSpacing": "-0.02em",
+            "textTransform": "lowercase"
+          },
+          "productName": {
+            "size": "24-32px",
+            "weight": "600-700",
+            "color": "#000000",
+            "textTransform": "lowercase"
+          },
+          "sectionHeading": {
+            "text": "blume*box",
+            "size": "72-96px",
+            "weight": "800",
+            "color": "#000000",
+            "textTransform": "lowercase"
+          }
+        }
+      },
+      "body": {
+        "fontFamily": "Charter",
+        "characteristics": "Serif, readable, traditional",
+        "usage": "Descriptive text, taglines, body copy",
+        "examples": {
+          "tagline": {
+            "size": "18-24px",
+            "weight": "400",
+            "color": "#000000",
+            "lineHeight": "1.6",
+            "textTransform": "lowercase"
+          },
+          "description": {
+            "size": "16-20px",
+            "weight": "400",
+            "color": "#000000",
+            "lineHeight": "1.7"
+          }
+        }
+      },
+      "ui": {
+        "fontFamily": "Roc Grotesk Medium",
+        "usage": "Navigation, buttons, labels, pricing",
+        "examples": {
+          "navigation": {
+            "size": "16-18px",
+            "weight": "500",
+            "color": "#000000",
+            "textTransform": "lowercase"
+          },
+          "button": {
+            "size": "14-16px",
+            "weight": "600",
+            "color": "#FFFFFF",
+            "textTransform": "lowercase"
+          }
+        }
+      },
+      "brandMark": {
+        "asterisk": "*",
+        "usage": "Always appears after 'blume' as part of brand identity",
+        "size": "Proportional to blume text, typically 1.1-1.2x"
+      }
+    },
+    "layout": {
+      "grid": {
+        "columns": 4,
+        "gap": "24-32px",
+        "maxWidth": "1440px",
+        "padding": "32-48px"
+      },
+      "sections": {
+        "hero": {
+          "height": "60-70vh",
+          "backgroundType": "Full-bleed image with grass texture",
+          "contentAlignment": "Center",
+          "overlay": "None - text directly on image"
+        },
+        "productGrid": {
+          "layout": "4 columns on desktop, responsive",
+          "spacing": "24-32px between cards",
+          "backgroundColor": "#F5F3E8"
+        },
+        "content": {
+          "maxWidth": "900px",
+          "padding": "80-120px vertical"
+        }
+      }
+    },
+    "components": {
+      "navigation": {
+        "style": "Horizontal top navigation",
+        "backgroundColor": "Transparent overlay on hero",
+        "items": ["home", "shop", "learn"],
+        "styling": {
+          "fontFamily": "Roc Grotesk Medium",
+          "fontSize": "16-18px",
+          "color": "#000000",
+          "backgroundColor": "#FFFFFF",
+          "padding": "12px 24px",
+          "borderRadius": "24px",
+          "textTransform": "lowercase"
+        }
+      },
+      "productCard": {
+        "structure": [
+          "Product image (seed packet)",
+          "Circular window showing seed variety",
+          "Product name",
+          "Size selector",
+          "Add to cart button"
+        ],
+        "styling": {
+          "backgroundColor": "#FFFFFF",
+          "padding": "16-24px",
+          "borderRadius": "8px",
+          "boxShadow": "0 2px 8px rgba(0,0,0,0.08)"
+        },
+        "productImage": {
+          "aspectRatio": "3:4",
+          "layout": "Centered seed packet with circular cutout window"
+        },
+        "productName": {
+          "fontFamily": "Roc Grotesk Medium",
+          "fontSize": "24-28px",
+          "fontWeight": "700",
+          "textTransform": "lowercase",
+          "lineHeight": "1.2"
+        },
+        "sizeSelector": {
+          "display": "Inline options with icons",
+          "format": "↓ 50g $10",
+          "styling": {
+            "border": "1px solid #000000",
+            "borderRadius": "20px",
+            "padding": "6px 12px",
+            "fontSize": "14px"
+          }
+        },
+        "quantityControl": {
+          "layout": "- 1 + controls",
+          "styling": {
+            "display": "inline-flex",
+            "gap": "8px",
+            "fontSize": "14px"
+          }
+        },
+        "addButton": {
+          "text": "add",
+          "backgroundColor": "#2D5016",
+          "color": "#FFFFFF",
+          "borderRadius": "20px",
+          "padding": "8px 24px",
+          "fontWeight": "600",
+          "textTransform": "lowercase"
+        }
+      },
+      "contentBlock": {
+        "backgroundColor": "#F5F3E8",
+        "shape": "Cloud/organic rounded shape",
+        "padding": "48-64px",
+        "textAlign": "left",
+        "maxWidth": "800px",
+        "styling": {
+          "borderRadius": "120px 80px 100px 90px / 90px 100px 80px 120px",
+          "description": "Asymmetric rounded corners for organic feel"
+        }
+      },
+      "buttons": {
+        "primary": {
+          "backgroundColor": "#2D5016",
+          "color": "#FFFFFF",
+          "borderRadius": "24px",
+          "padding": "12px 32px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "textTransform": "lowercase",
+          "border": "none",
+          "hoverState": {
+            "backgroundColor": "#1F3810",
+            "transform": "translateY(-2px)"
+          }
+        },
+        "secondary": {
+          "backgroundColor": "transparent",
+          "color": "#000000",
+          "border": "2px solid #000000",
+          "borderRadius": "24px",
+          "padding": "12px 32px"
+        }
+      },
+      "seedPacket": {
+        "design": "Minimalist white packet with circular window",
+        "window": {
+          "shape": "Circle",
+          "position": "Center",
+          "function": "Shows actual seed/product inside"
+        },
+        "labelDesign": {
+          "brand": "seed",
+          "productName": "Large, bold, lowercase",
+          "colorCircles": "2-3 colored circles showing plant/flower colors",
+          "layout": "Top label area, central window, minimal text"
+        }
+      }
+    },
+    "visualElements": {
+      "textures": {
+        "grass": {
+          "usage": "Hero section background, section dividers",
+          "style": "Photographed aerial view of lush green grass",
+          "treatment": "Full-bleed, high contrast"
+        }
+      },
+      "imagery": {
+        "style": "Clean product photography on white background",
+        "seedPackets": "Minimal, modern design with circular window cutouts",
+        "flowers": "Small daisy-like flowers scattered on grass",
+        "productShots": "Flat lay arrangements on grass texture"
+      },
+      "shapes": {
+        "circles": {
+          "usage": "Product windows, color indicators, design elements",
+          "sizes": "Various, from small dots to large windows"
+        },
+        "organic": {
+          "usage": "Content blocks, speech bubbles",
+          "style": "Asymmetric rounded rectangles with varying corner radii"
+        }
+      },
+      "icons": {
+        "style": "Simple line icons",
+        "examples": ["↓ (download/size)", "- + (quantity controls)"],
+        "weight": "2px stroke"
+      }
+    },
+    "spacing": {
+      "scale": "8px base unit",
+      "values": {
+        "xs": "8px",
+        "sm": "16px",
+        "md": "24px",
+        "lg": "32px",
+        "xl": "48px",
+        "2xl": "64px",
+        "3xl": "96px"
+      },
+      "componentSpacing": {
+        "cardPadding": "24px",
+        "sectionPadding": "64-96px vertical",
+        "elementGap": "16-24px"
+      }
+    },
+    "responsive": {
+      "breakpoints": {
+        "mobile": "320-767px",
+        "tablet": "768-1023px",
+        "desktop": "1024px+"
+      },
+      "gridBehavior": {
+        "mobile": "1 column",
+        "tablet": "2 columns",
+        "desktop": "4 columns"
+      }
+    },
+    "designPrinciples": {
+      "accessibility": "Simple, approachable design for all skill levels",
+      "sustainability": "Natural, organic visual language",
+      "minimalism": "Clean product design with focus on essential information",
+      "playfulness": "Lowercase text, organic shapes, cheerful colors",
+      "authenticity": "Real photography, transparent windows showing actual products"
+    },
+    "interactionPatterns": {
+      "hover": {
+        "cards": "Subtle lift with shadow increase",
+        "buttons": "Background color darkens, slight upward movement",
+        "links": "Underline appears"
+      },
+      "transitions": {
+        "duration": "200-300ms",
+        "easing": "ease-in-out"
+      }
+    },
+    "copywriting": {
+      "tone": "Encouraging, inclusive, lowercase-first",
+      "style": "Conversational, removes barriers, emphasizes accessibility",
+      "examples": {
+        "tagline": "gardens for everyone",
+        "subheading": "no yard doesn't have to mean no garden! let your flowers blume*",
+        "description": "Greenery in your home is more than just decoration; it's a breath of life within your living space."
+      },
+      "conventions": {
+        "punctuation": "Lowercase text even at sentence start",
+        "brandName": "Always 'blume*' with asterisk",
+        "emphasis": "Through word choice and layout, not caps"
+      }
+    },
+    "packagingDesign": {
+      "materials": "White paper/cardstock",
+      "finish": "Matte",
+      "window": "Circular die-cut revealing product",
+      "branding": {
+        "position": "Top left",
+        "text": "seed",
+        "productName": "Large lowercase below brand"
+      },
+      "colorIndicators": "2-4 colored circles showing flower/plant colors",
+      "informationHierarchy": [
+        "Brand ('seed')",
+        "Product name",
+        "Color circles",
+        "Product window",
+        "Additional details (minimal)"
+      ]
+    }
+  }
+}
